@@ -1,0 +1,9 @@
+body {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+margin: solid 1px black;
+padding: 8px;
+border-radius: 20px;
+}
