@@ -1,21 +1,38 @@
-let messages = [
-  "Hey, how's it going?",
-  "I'm great, thank you! How about you?",
-  "All good. Been working on my Portfolio lately."
-  "Same here!"
-]
+let firstCard = 10
+let secondCard = 11
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let  isAlive = true
 
-console.log(messages[0])
-console.log(messages[1])
-console.log(messages[2])
-console.log(messages[3])
-
-//DRY - dON'T REPEAT YOURSELF
-for (let i = 0; i < maximum.lenght; i += 1) {
-  console.log[messages(i)]
+function startGame() {
+  renderGame()
 }
 
-let cards = [7, 3, 9]
-for (let i = 0; i <cards.length; i += 1) {   //i ++ can be used instead of i += 1 (gives same result)
-  console.log(cards[i])
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardEl = document.getElementById("card-el")
+console.log(sumEl)
+
+function startGame() {
+  cardEl .textContent = "Card: " + firstCard + " " + secondCard
+  sumEl.textContent = "Sum: " + sum
+   if (sum < 21) 
+    message = "Do you want to draw a new card?"
+  } else if (sum === 21) {
+    message = "Wohoo! You've got Blackjack!"
+    hasBlackJack = true
+  } else (sum > 21) {
+    message = "You're out of the game!"
+    isAlive = false
 }
+
+    messageEl.textContent = message
+
+  console.log(message)
+
+
+  function newCard() {
+    let card =6
+    sum += card
+    renderGame()
+  }
