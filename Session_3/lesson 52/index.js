@@ -7,15 +7,19 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardEl = document.getElementById("card-el")
 
-/*let player = {
+/*
+let player = {
   name: "Dee",
   chips: 180
-} 
-let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.name + ": $" + player.chips
-*/
+} */
+
 let playerName = Dee
 let playerChips = 180
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
+
+
 
 let playerEl = document.getElementById("player-el")
 playerEl.textContent = playerName + ": $" + playerChips
@@ -25,7 +29,7 @@ function getRandomCard() {
   if (randomNumber > 10) {
     return 10
   } else if (randomNumber === 1) {
-    return 11
+    return 11  
   } else {
     return randomNumber
   }
